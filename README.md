@@ -11,7 +11,7 @@ and graphical interface configuration.
 
 ```bash
 chmod +x setup.sh
-./setup.sh
+sudo ./setup.sh
 ```
 
 ## Usage
