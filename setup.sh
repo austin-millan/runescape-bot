@@ -51,5 +51,7 @@ EOT
 source ~/.bashrc
 
 # Install RuneMate
-chmod +x RuneMate_setup.sh
-./RuneMate_setup.sh
+#chmod +x RuneMate_setup.sh
+#./RuneMate_setup.sh
+chmod +x setup_runemate.sh
+./setup_runemate.sh
