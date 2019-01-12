@@ -12,7 +12,7 @@ sudo apt-get install vnc4server
 sudo apt-get install xfce4 xfce4-goodies
 
 # setup password
-vncpasswd
+#vncpasswd
 #su -l -c 'printf "password\npassword\n\n" | vncpasswd' $USER # command didn't work
 # this may have worked
 printf "password\npassword\n\n" | vncpasswd

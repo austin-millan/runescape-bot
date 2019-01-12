@@ -10,7 +10,7 @@ This repository includes Debian-based installation scripts for Old School RuneSc
 
 ## Installation
 
-`setup_vm.sh`: Optional script if deploying from a server. It sets up a VNC server
+`configure_vm.sh`: Optional script if deploying from a server. It sets up a VNC server
 that you can access on port `5901`. This will need to be ran if deploying on a virtual
 machine where you require remote access.
 
