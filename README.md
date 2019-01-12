@@ -29,11 +29,17 @@ After some time, you will be prompted for input by the RuneMate installer. If al
 After installation,
 you should be able to launch each respective client with the following commands in your terminal:
 
-```botter@bash$ oldschool```
+```
+bash$ oldschool
+```
 
-```botter@bash$ runescape```
+```
+bash$ runescape
+```
 
-```botter@bash$ RuneMate```
+```
+bash$ ./runemate.sh
+```
 
 ### `accounts.csv`
 
@@ -51,6 +57,17 @@ Here's a list of arguments that can be supplied to `RuneMate`.
 -world="301" (selects a world to auto-login to)
 -decorated (toggles game rendering for OSRS)
 ```
+
+## TODOs / Issues
+
+- High CPU usage when running OSRS:
+    - Possible Java options that may remedy the issue:
+        - `-Xincgc`
+        - Thread options (reduce/minimize)
+        - `-Dsun.java2d.xrender='True'`
+        - `-XX:CICompilerCount=2` (minimum)
+        - `-Xms512m` (initial heap value)
+        - `-Xmx512m` (maximum heap value... when the same as initial, reduces garbage collections)
 
 ## References
 - [RuneMate Community Thread on Setting up RuneMate](https://www.runemate.com/community/threads/runemate-on-linux.15688/)
