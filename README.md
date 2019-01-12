@@ -10,7 +10,9 @@ This repository includes Debian-based installation scripts for Old School RuneSc
 
 ## Installation
 
-Currently this is a mix of command-line and graphical user interface configuration. Only RuneMate should require user interaction.
+`setup_vm.sh`: Optional script if deploying from a server. It sets up a VNC server
+that you can access on port `5901`. This will need to be ran if deploying on a virtual
+machine where you require remote access.
 
 To begin installation, either clone this repository or download the ZIP file.  
 ```bash
@@ -20,7 +22,7 @@ chmod +x setup.sh
 sudo ./setup.sh
 ```
 
-After some time, you will be prompted for input by the RuneMate installer. If all went well, OSRS, RS3, RuneMate, all the relevant dependencies should be installed.
+After some time, you will be prompted for input by the RuneMate installer. If all went well, Java, OSRS, RS3, RuneMate, all the relevant dependencies should be installed.
 
 ## Usage
 
@@ -28,7 +30,9 @@ After installation,
 you should be able to launch each respective client with the following commands in your terminal:
 
 ```botter@bash$ oldschool```
+
 ```botter@bash$ runescape```
+
 ```botter@bash$ RuneMate```
 
 ### `accounts.csv`
