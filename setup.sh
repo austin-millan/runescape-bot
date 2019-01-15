@@ -48,6 +48,14 @@ sed -i 's/'CHANGEME'/'$USER'/g' ~/'.local/share/applications/Old School RuneScap
 cat <<EOT >> ~/.bashrc
 alias oldschool="cd ~/'runescape/oldschool' && java -Duser.home='.' -Djava.class.path='jagexappletviewer.jar' -Dcom.jagex.config='http://oldschool.runescape.com/jav_config.ws' 'jagexappletviewer' 'oldschool'"
 EOT
+
+# Create function (similar to alias) so RuneScape can be called in shell script without hard path
+cat <<EOT >> ~/.bashrc
+oldschool_func() {
+    cd ~/'runescape/oldschool' && java -Duser.home='.' -Djava.class.path='jagexappletviewer.jar' -Dcom.jagex.config='http://oldschool.runescape.com/jav_config.ws' 'jagexappletviewer' 'oldschool'
+}
+export -f oldschool_func
+EOT
 source ~/.bashrc
 
 # Install RuneMate
